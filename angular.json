@@ -11,6 +11,9 @@
         },
         "@schematics/angular:application": {
           "strict": true
+        },
+        "@ngneat/spectator:spectator-component": {
+          "style": "scss"
         }
       },
       "root": "",
@@ -132,6 +135,6 @@
   },
   "defaultProject": "boilerplate-angular",
   "cli": {
-    "defaultCollection": "@angular-eslint/schematics"
+    "defaultCollection": "@ngneat/spectator"
   }
 }
