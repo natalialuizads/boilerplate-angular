@@ -1,0 +1,10 @@
+{
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "**/*.d.ts"
+  ]
+}

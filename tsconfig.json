@@ -2,6 +2,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": ".",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
@@ -22,8 +23,28 @@
     "lib": [
       "ES2022",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@core/*": [
+        "src/app/core/*"
+      ],
+      "@env/*": [
+        "src/environments/*"
+      ],
+      "@shared/*": [
+        "src/app/shared/*"
+      ],
+      "@assets/*": [
+        "src/assets/*"
+      ],
+      "@env": [
+        "src/environments/environment"
+      ]
+    }
   },
+  "exclude": [
+    "./cypress.config.ts"
+  ],
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,

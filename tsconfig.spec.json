@@ -4,8 +4,16 @@
   "compilerOptions": {
     "outDir": "./out-tsc/spec",
     "types": [
-      "jasmine"
-    ]
+      "jest",
+      "node",
+      "@testing-library/jest-dom",
+    ],
+    "paths": {
+      "@env/*": ["src/environments/*"],
+      "@core/*": ["src/app/core/*"],
+      "@shared/*": ["src/app/shared/*"],
+      "@assets/*": ["src/assets/*"],
+    }
   },
   "include": [
     "src/**/*.spec.ts",
