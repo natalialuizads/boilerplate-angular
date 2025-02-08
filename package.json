@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "prepare": "husky"
   },
   "private": true,
   "dependencies": {
@@ -38,6 +39,7 @@
     "@typescript-eslint/eslint-plugin": "7.11.0",
     "@typescript-eslint/parser": "7.11.0",
     "eslint": "^8.57.0",
+    "husky": "^9.1.7",
     "typescript": "~5.4.2"
   }
 }
